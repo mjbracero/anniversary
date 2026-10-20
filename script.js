@@ -123,18 +123,18 @@ anthem.addEventListener("keydown", (event) => {
 });
 
 const featuredPhotos = new Set([
-  "02.jpeg", "03.jpeg", "04.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg", "09.jpeg",
-  "12.jpeg", "13.jpeg", "15.jpeg", "17.jpeg", "20.jpeg", "22.jpeg",
-  "25.jpeg", "28.jpeg", "30.jpeg", "32.jpeg", "35.jpeg", "38.jpeg", "40.jpeg", "42.jpeg",
-  "43.jpeg", "45.jpeg", "48.jpeg", "70.jpeg", "100.jpeg",
+  "02.webp", "03.webp", "04.webp", "05.webp", "06.webp", "07.webp", "08.webp", "09.webp",
+  "12.webp", "13.webp", "15.webp", "17.webp", "20.webp", "22.webp",
+  "25.webp", "28.webp", "30.webp", "32.webp", "35.webp", "38.webp", "40.webp", "42.webp",
+  "43.webp", "45.webp", "48.webp", "70.webp", "100.webp",
 ]);
 
 const albumPhotos = [];
 for (let i = 2; i <= 100; i += 1) {
-  const name = `${String(i).padStart(2, "0")}.jpeg`;
+  const name = `${String(i).padStart(2, "0")}.webp`;
   if (!featuredPhotos.has(name)) albumPhotos.push(name);
 }
-albumPhotos.push("71c7ccef-f88e-49e6-9b64-dff8742939a7.jpeg");
+albumPhotos.push("71c7ccef-f88e-49e6-9b64-dff8742939a7.webp");
 
 const book = document.getElementById("book");
 const flipPrev = document.getElementById("flipPrev");
